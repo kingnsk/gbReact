@@ -5,6 +5,8 @@ const useStyles = makeStyles(() => ({
   messageList: {
     width: "100%",
     height: "90%",
+    margin: "10px 10px 10px 10px",
+    
     borderBottom: "1px solid black",
   },
 }));
@@ -16,6 +18,7 @@ const MessageList = ({ messagesArray }) => {
     <div className={classes.messageList}>
       {messagesArray.map((message, i) => (
         <div key={i}>{message.messageText}</div>
+	
       ))}
     </div>
   );

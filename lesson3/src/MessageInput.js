@@ -40,6 +40,7 @@ const MessageInput = ({ onSendMessage }) => {
   return (
     <div className={classes.inputWrapper}>
       <TextField
+	autoFocus = {true}
         value={inputMessage}
         label="Введите сообщение"
         onChange={(e) => setInputMessage(e.target.value)}

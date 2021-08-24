@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function App() {
+  
+  var chatNumber=0;
+
   const [messagesArray, setMessagesArray] = useState([]);
 
   const classes = useStyles();
@@ -44,16 +47,14 @@ function App() {
 	var currentTime = new Date().valueOf();
 
         setMessagesArray((prev) => [...prev, {
-  	messageText: "Ваше сообщение получено!",
+  	messageText: "Robot: Ваше сообщение получено!",
 	author: "robot",
 	timeStamp: currentTime,
     }]);
 
                 	
 }
-		
-  		
-	}, 1000)
+	}, 1500)
 	
 	}
 
